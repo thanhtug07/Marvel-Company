@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Ứng Tuyển - Marvel Technology</title>
+    <style>
+        :root {
+            --bg-dark: #000000;
+            --text-light: #FFFFFF;
+            --accent-blue: #00BFFF;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --input-bg: #1a1a1a;
+            --input-border: #333333;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 40px 8%;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 30px;
+            background-color: #0d0d0d;
+            border-radius: 8px;
+            box-shadow: 0 0 25px rgba(0, 191, 255, 0.15);
+        }
+      header {
+      background-color: rgba(0,0,0,0.85);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      color: #0b74de;
+    }
+        .head h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 5px;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        .head p {
+            color: var(--accent-blue);
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 30px;
+            text-align: center;
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 10px;
+        }
+
+        .formgroup {
+            margin-bottom: 20px;
+        }
+
+        .formgroup label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--accent-blue);
+            font-size: 1em;
+        }
+
+        .formgroup input[type="text"],
+        .formgroup input[type="email"],
+        .formgroup input[type="tel"],
+        .formgroup select,
+        .formgroup textarea {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--input-bg);
+            border: 1px solid var(--input-border);
+            border-radius: 4px;
+            color: var(--text-light);
+            font-family: var(--font-main);
+            box-sizing: border-box; /* Quan trọng để padding không làm hỏng chiều rộng */
+        }
+        
+        
+        .formgroup select {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22%2300BFFF%22%20d%3D%22M7%2010l5%205%205-5z%22%2F%3E%3C%2Fsvg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px top 50%;
+        }
+
+        .formgroup input[type="file"] {
+            border: 1px solid var(--input-border);
+            padding: 10px;
+            background-color: var(--input-bg);
+            border-radius: 4px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submitbtn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--accent-blue);
+            color: var(--bg-dark);
+            border: none;
+            border-radius: 4px;
+            font-size: 1.2em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
+
+        .submitbtn:hover {
+            background-color: #008CBA;
+        }
+        
+        footer {
+            text-align: right;
+            padding-top: 20px;
+            border-top: 1px dashed var(--accent-blue);
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: var(--accent-blue);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo">Marvel</div>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="about.html">Về Marvel</a>
+      <a href="contact.html">Liên hệ</a>
+    </nav>
+  </header>
+    <div class="container">
+        <div class="head">
+            <h1>Form Ứng Tuyển Công Việc</h1>
+            <p>Hãy cho chúng tôi biết về bạn. Mọi thông tin đều được bảo mật tuyệt đối.</p>
+        </div>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <div class="formgroup">
+                <label for="fullName">Họ và Tên (*)</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Ví dụ: Nguyễn Văn A">
+            </div>
+
+            <div class="formgroup">
+                <label for="email">Email (*)</label>
+                <input type="email" id="email" name="email" required placeholder="tenban@email.com">
+            </div>
+
+            <div class="formgroup">
+                <label for="phone">Số điện thoại (*)</label>
+                <input type="tel" id="phone" name="phone" required placeholder="090 123 4567">
+            </div>
+
+            <div class="formgroup">
+                <label for="position">Vị trí ứng tuyển (*)</label>
+                <select id="position" name="position" required>
+                    <option value="" disabled selected>--- Chọn vị trí bạn muốn ứng tuyển ---</option>
+                    <option value="ML_Engineer">Kỹ sư Học máy (Machine Learning Engineer)</option>
+                    <option value="Data_Scientist">Data Scientist - Phân tích Dữ liệu Lớn</option>
+                    <option value="Backend_Dev">Lập trình viên Backend (Python/Golang)</option>
+                    <option value="DevOps">DevOps/Cloud Engineer (AWS/Azure)</option>
+                    <option value="Sales_Consultant">Chuyên viên Tư vấn Giải pháp AI</option>
+                    <option value="Other">Khác (Vui lòng ghi rõ trong phần thư)</option>
+                </select>
+            </div>
+
+            <div class="formgroup">
+                <label for="cvFile">Tải lên CV (Tập tin PDF) (*)</label>
+                <input type="file" id="cvFile" name="cvFile" accept=".pdf" required>
+            </div>
+            
+            <div class="formgroup">
+                <label for="portfolio">Link Portfolio/Github/LinkedIn (Nếu có)</label>
+                <input type="text" id="portfolio" name="portfolio" placeholder="https://github.com/...">
+            </div>
+
+            <div class="formgroup">
+                <label for="coverLetter">Thư giới thiệu / Lời nhắn</label>
+                <textarea id="coverLetter" name="coverLetter" placeholder="Chia sẻ về kinh nghiệm hoặc lý do bạn muốn gia nhập Marvel Technology..."></textarea>
+            </div>
+
+            <button type="submit" class="submitbtn">GỬI HỒ SƠ ỨNG TUYỂN</button>
+        </form>
+
+        <footer>
+            © Marvel Technology. Cảm ơn bạn đã quan tâm đến cơ hội nghề nghiệp này.
+        </footer>
+    </div>
+
+</body>
+</html>
