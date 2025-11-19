@@ -1,0 +1,171 @@
+:root {
+            --bg-dark: #000000;
+            --text-light: #FFFFFF;
+            --accent-blue: #00BFFF;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --section-bg: rgba(255, 255, 255, 0.05);
+            --border-highlight: rgba(0, 191, 255, 0.5);
+            --process-bg: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 40px 8%;
+            line-height: 1.7;
+        }
+        header {
+      background-color: rgba(0,0,0,0.85);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      color: #0b74de;
+    }
+    .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .head h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 5px;
+            border-bottom: 3px solid var(--accent-blue);
+            padding-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        .head p {
+            color: #ccc;
+            font-size: 1.1em;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        .service-section {
+            margin-bottom: 50px;
+        }
+
+        .service-section h2 {
+            color: var(--accent-blue);
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 25px;
+            border-left: 5px solid var(--accent-blue);
+            padding-left: 15px;
+        }
+
+        /* Quy trình 4 bước */
+        .process-flow {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .step-card {
+            background-color: var(--process-bg);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border-top: 5px solid var(--accent-blue);
+        }
+
+        .step-card .step-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--accent-blue);
+            line-height: 1;
+        }
+
+        .step-card h3 {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .step-card p {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+
+        th, td {
+            border: 1px solid var(--border-highlight);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--accent-blue);
+            color: var(--bg-dark);
+            text-transform: uppercase;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--section-bg);
+        }
+
+        .contact-cta {
+            background-color: var(--accent-blue);
+            color: var(--bg-dark);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact-cta p {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .contact-cta a {
+            color: var(--bg-dark);
+            text-decoration: none;
+            background-color: var(--text-light);
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-cta a:hover {
+            background-color: #ccc;
+        }
+
+        footer {
+            text-align: right;
+            padding-top: 20px;
+            border-top: 1px dashed var(--accent-blue);
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: var(--accent-blue);
+        }

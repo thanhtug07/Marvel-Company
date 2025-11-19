@@ -1,0 +1,102 @@
+:root {
+            --bg-dark: #000000;
+            --text-light: #FFFFFF;
+            --accent-blue: #00BFFF;
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --section-bg: rgba(255, 255, 255, 0.05); /* Nền khối mờ */
+            --border-highlight: rgba(0, 191, 255, 0.5);
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: var(--font-main);
+            margin: 0;
+            padding: 40px 8%;
+            line-height: 1.6;
+        }
+        header {
+      background-color: rgba(0,0,0,0.85);
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      color: #0b74de;
+    }
+.start {
+    text-align: center;
+    color:#FFFFFF;
+    font-size: 3rem;
+    margin-top:60px;
+    font-family: 'Times New Roman';
+    transition: 0.3s ease;
+}
+.start:hover {
+    transform:0px 8px 10px;
+    color:rgb(114, 226, 226);
+    box-shadow:1px 6px 2px;
+}
+.imagephone {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px; 
+    margin-top:60px;
+}
+.card {
+width:100%;
+height:450px;
+
+border-radius:10px;
+transition: 0.3s ease;
+}
+.image {
+    text-align: center;
+}
+
+.image img {
+    width: 65%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.tittle h3 {
+    margin-top: 12px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.tittle a {
+    list-style: none;
+    color:#FFFFFF;
+    text-decoration: none;
+
+}
+.tittle a:hover {
+    color:#00BFFF;
+}
+.xemthem {
+    text-align: center;
+    margin:8px;
+
+}
+.xemthem a {
+    color:white;
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.4rem;
+    background-color: #03227d;
+    border:1.5px solid rgb(26, 80, 218);
+    
+}
